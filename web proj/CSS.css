@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+/* -------------------Everthing about the Nav bar------------------------*/
+.navbar {
+    min-width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+}
+.nav-branding {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-name {
+    padding-left: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    color: green;
+}
+.nav-span {
+    color: black;
+    font-size: small;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-img {
+    width: 50px;
+    height: 50px;
+}
+.nav-link {
+    transition: 0.7s ease;
+    color: black;
+}
+.nav-link:hover {
+    color: dodgerblue;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+@media(max-width:768px){
+    .hamburger {
+        display: block;
+        float: left;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        margin-top: 10px;
+        padding: 15px 0%;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-brand {
+        font-size: 1rem;
+    }
+    .nav-link {
+        color: white;
+    }
+    .nav-item {
+        padding: 5px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/*-----------------------------------Intro section-----------------------------*/
+.intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/intro.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 200px 10px;
+    min-height: 50vh;
+}
+.intro-phrase {
+    font-style: italic;
+}
+.intro-span1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: normal;
+    box-sizing: border-box;
+}
+.intro-span2 {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 0px;
+    padding-bottom: 100px;
+}
+.intro-newsletter {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+    padding: 15px 0;
+}
+.intro-news-phrase {
+    font-size: 60px;
+    color: white;
+    padding-bottom: 10px;
+}
+.intro-emailbox {
+    padding: 5px;
+    border-radius: 10px;
+    width: 450px;
+}
+.intro-newsletter-btn {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .intro {
+        margin-top: 0%;
+    }
+    .intro-phrase {
+        font-style: italic;
+    }
+    .intro-span1 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-style: normal;
+        box-sizing: border-box;
+    }
+    .intro-span2 {
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: smaller;
+    }
+    .intro-news-phrase {
+        font-size: 30px;
+    }
+    .intro-emailbox {
+        width: 250px;
+    }
+}
+
+/*=================================== HERO SECTION ==========================*/
+.hero-section-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.hero-section img {
+    width: 300px;
+    height: 180px;
+    padding-bottom: 30px;
+}
+.hero-section ul {
+    margin: 50px 35px;
+    width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.hero-section li {
+    margin-right: 15px;
+    padding: 50px 10px;
+	flex-basis: 33%;
+	text-align: center;
+    background-color: green;
+}
+.hero-section a {
+    font-size: larger;
+    color: white;
+}
+@media (max-width:768px) {
+	.hero-section ul {
+        flex-direction: column;
+    }
+    .hero-section li {
+        margin-bottom: 20px;
+    }
+}
+
+/* ======================================= NEWS SECTION ====================================*/
+.news-section-div {
+    margin: 0% 15px;
+}
+.news-section h3 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+.news-section span {
+    color: green;
+}
+.news-section a {
+    color: blue;
+}
+.news-date {
+    text-align: left;
+    margin: 15px 0px;
+}
+.news-section ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.news-section li {
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 10px 15px;
+    padding-bottom: 40px;
+	flex-basis: 33%;
+    border-radius: 20px;
+	text-align: center;
+    background-color: white;
+}
+.news-section-btn {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+@media (max-width:768px) {
+	.news-section ul {
+        flex-direction: column;
+    }
+    .news-section li {
+        margin-bottom: 15px;
+    }
+}
+
+/*===================================  EVENTS SECTION  ==================================*/
+.events-section-div {
+    margin: 100px 10px;
+}
+.events-section h3 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    color: green;
+}
+.events-section span {
+    color: green;
+    margin-top: 5px;
+}
+.events-section li {
+    margin-bottom: 10px;
+}
+.events-section span {
+    margin-left: 10px;
+}
+.events-section a {
+    color: green;
+}
+.events-section-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/img5.jpeg);
+    margin: 50px 80px;
+    width: 300px;
+    height: 170px;
+    padding: 40px 10px;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+}
+.events-section-phrase {
+    color: white;
+    font-size: 30px;
+}
+
+/*=======================================  FUTA SECTION  ===================================*/
