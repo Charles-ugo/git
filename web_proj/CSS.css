@@ -7,9 +7,6 @@
 body {
     background-color: lightgrey;
 }
-body a:hover {
-    color: dodgerblue;
-}
 
 /* -------------------Everthing about the Nav bar------------------------*/
 .navbar {
@@ -313,46 +310,10 @@ body a:hover {
 }
 
 /*=======================================  FUTA SECTION  ===================================*/
-.futa-section-div {
-    display: flex;
-    justify-content: left;
-    text-align: start;
-    background-color: black;
-    padding: 50px 20px;
-}
-.futa-section a {
-    color: gray;
-    display: grid;
-}
-.futa-section p {
-    color: white;
-}
-.futa-section ul {
-    margin-right: 10%;
-}
-.futa-subheadings {
-    font-size: larger;
-    margin-bottom: 8px;
-}
-.futa-section hr {
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-.futa-section img {
-    width: 40px;
-    height: 40px;
-}
-@media (max-width:768px) {
-    .futa-section-div {
-        display: grid;
-        padding: 50px 40px;
-    }
-}
-.futa-2nd-div {
+.futa-secton {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: dimgray;
+    background-color: black;
+    color: white
 }
-
